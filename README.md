@@ -20,3 +20,16 @@
   14) git status
   15) git push -u origin master
   16) git status
+----------------------
+17) To override local changes- 
+git reset --hard origin/master
+
+18) when we are trying to push to remote repository but has created a new file on remote which has not been pulled yet, let say Readme. In that case as the error says
+git rejects the update
+
+as we have not taken updated remote in our local environment. So Take pull first from remote
+
+git pull
+It will update your local repository and add a new Readme file. Then Push updated changes to remote
+
+git push origin master
